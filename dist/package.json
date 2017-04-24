@@ -1,7 +1,7 @@
 {
 	"name": "ng2-stomp",
 	"version": "1.0.0",
-	"description": "Wot!",
+	"description": "wrapper for stomp client in angular 2",
 	"main": "bundles/ng2-stomp.umd.min.js",
 	"module": "index.js",
 	"typings": "index.d.ts",
@@ -14,16 +14,16 @@
 	],
 	"author": {
 		"name": "Preetham",
-		"email": "preethamgr@gmail.com"
+		"email": "preetham1290@gmail.com"
 	},
 	"license": "",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/preetham1290/wrapper-project-for-stomp"
+		"url": "https://github.com/preetham1290/ng2-stomp"
 	},
-	"homepage": "https://github.com/preetham1290/wrapper-project-for-stomp",
+	"homepage": "https://github.com/preetham1290/ng2-stomp",
 	"bugs": {
-		"url": "https://github.com/preetham1290/wrapper-project-for-stomp"
+		"url": "https://github.com/preetham1290/ng2-stomp"
 	},
 	"peerDependencies": {
 		"@angular/core": "^2.4.0",

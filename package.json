@@ -1,27 +1,27 @@
 {
-  "name": "angular-npm-module-seed",
+  "name": "ng2-stomp",
   "version": "1.0.0",
-  "description": "Starting point for developing Angular modules and publishing them on NPM",
+  "description": "This is a wrapper project for STOMP client which uses SockJS",
   "keywords": [
-    "angular 2"
+    "angular 2, STOMP, SockJS"
   ],
   "main": "index.js",
   "scripts": {
     "clean": "rimraf .tmp && rimraf dist",
     "transpile": "ngc",
     "package": "rollup -c",
-    "minify": "./node_modules/uglify-js/bin/uglifyjs dist/bundles/npm-module-seed.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/npm-module-seed.umd.min.js",
+    "minify": "./node_modules/uglify-js/bin/uglifyjs dist/bundles/ng2-stomp.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng2-stomp.umd.min.js",
     "copy": "cpx './package-dist.json' dist && renamer --find 'package-dist.json' --replace 'package.json' ./dist/*",
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy"
   },
   "license": "MIT",
-  "homepage": "https://github.com/davguij/angular-npm-module-seed",
+  "homepage": "https://github.com/preetham1290/ng2-stomp",
   "bugs": {
-    "url": "https://github.com/davguij/angular-npm-module-seed/issues"
+    "url": "https://github.com/preetham1290/ng2-stomp/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davguij/angular-npm-module-seed.git"
+    "url": "https://github.com/preetham1290/ng2-stomp.git"
   },
   "devDependencies": {
     "@angular/compiler": "^2.4.4",
@@ -36,7 +36,9 @@
   "dependencies": {
     "@angular/common": "^2.4.4",
     "@angular/core": "^2.4.4",
-    "rxjs": "^5.0.3",
+    "rxjs": "^5.1.0",
+    "sockjs-client": "^1.1.2",
+    "stompjs": "^2.3.3",
     "zone.js": "^0.7.6"
   }
 }

@@ -1,0 +1,36 @@
+{
+	"name": "ng2-stomp",
+	"version": "1.0.0",
+	"description": "Wot!",
+	"main": "bundles/ng2-stomp.umd.min.js",
+	"module": "index.js",
+	"typings": "index.d.ts",
+	"keywords": [
+		"angular",
+		"angular2",
+		"angular 2",
+		"STOMP",
+		"SockJS"
+	],
+	"author": {
+		"name": "Preetham",
+		"email": "preethamgr@gmail.com"
+	},
+	"license": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/preetham1290/wrapper-project-for-stomp"
+	},
+	"homepage": "https://github.com/preetham1290/wrapper-project-for-stomp",
+	"bugs": {
+		"url": "https://github.com/preetham1290/wrapper-project-for-stomp"
+	},
+	"peerDependencies": {
+		"@angular/core": "^2.4.0",
+		"reflect-metadata": "^0.1.8",
+		"rxjs": "^5.1.0",
+		"sockjs-client": "^1.1.2",
+		"stompjs": "^2.3.3",
+		"zone.js": "^0.7.2"
+	}
+}

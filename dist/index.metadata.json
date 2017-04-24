@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":3,"metadata":{},"exports":[{"from":"./ng2-stomp.module","export":["Ng2StompModule"]},{"from":"./ng2-stomp.service","export":["Ng2StompService"]}]},{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./ng2-stomp.module","export":["Ng2StompModule"]},{"from":"./ng2-stomp.service","export":["Ng2StompService"]}]}]

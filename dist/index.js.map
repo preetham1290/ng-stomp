@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,SAAS,cAAc,QAAQ,oBAAoB,CAAC;AACpD,SAAS,eAAe,QAAQ,qBAAqB,CAAC","sourcesContent":["export { Ng2StompModule } from './ng2-stomp.module';\nexport { Ng2StompService } from './ng2-stomp.service';\ninterface DecoratorInvocation {\n  type: Function;\n  args?: any[];\n}\n"]}

@@ -13,11 +13,11 @@ export class Ng2StompService {
             { transports: [], })));
     }
 
-    getConnection(stompClient: any, configHeaders?: any): Observable<any> {
+    getConnection(stompClient: any, configHeaders?: any, callback?: any): Observable<any> {
         if (!stompClient || stompClient === null) {
             throw new Error('stompClient cannot be null');
         }
-        return Observable.of(stompClient.connect(configHeaders, () => { }));
+        return Observable.of(stompClient.connect(configHeaders, callback));
     }
 
     //Returns subscription Obj if needed to unSubscribe

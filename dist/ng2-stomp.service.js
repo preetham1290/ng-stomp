@@ -6,11 +6,11 @@ export var Ng2StompService = (function () {
     Ng2StompService.prototype.getStompClient = function (url) {
         return Observable.of(Stomp.over(new SockJS(url, null, { transports: [], })));
     };
-    Ng2StompService.prototype.getConnection = function (stompClient, configHeaders) {
+    Ng2StompService.prototype.getConnection = function (stompClient, configHeaders, callback) {
         if (!stompClient || stompClient === null) {
             throw new Error('stompClient cannot be null');
         }
-        return Observable.of(stompClient.connect(configHeaders, function () { }));
+        return Observable.of(stompClient.connect(configHeaders, callback));
     };
     //Returns subscription Obj if needed to unSubscribe
     Ng2StompService.prototype.subscribeToTopic = function (stompClient, topic, callback) {

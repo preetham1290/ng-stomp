@@ -1,6 +1,6 @@
 {
 	"name": "ng2-stomp",
-	"version": "1.0.0",
+	"version": "1.0.22,
 	"description": "wrapper for stomp client in angular 2",
 	"main": "bundles/ng2-stomp.umd.min.js",
 	"module": "index.js",

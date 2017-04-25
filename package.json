@@ -1,6 +1,6 @@
 {
   "name": "ng2-stomp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a wrapper project for STOMP client which uses SockJS",
   "keywords": [
     "angular 2, STOMP, SockJS"

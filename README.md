@@ -6,7 +6,7 @@ Steps to use:
 ```
 step 1 will list all the peer dependencies need(will be fixed in later version)
 ```html
-2. npm install "above-listed-dependencies" from your angular project
+2. npm install "above-listed-dependencies" to your angular project
 ```
 ```html
 3. include "node_modules/sockjs-client/dist/sockjs.min.js" 

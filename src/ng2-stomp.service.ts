@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-
 declare var Stomp: any;
 declare var SockJS: any;
 declare var Client: any;

@@ -8,8 +8,8 @@ export class Ng2StompService {
 
     constructor() { }
 
-    getStompClient(): Observable<any> {
-        return Observable.of(Stomp.over(new SockJS('http://localhost:8080/auth/connectsocket', null,
+    getStompClient(url: string): Observable<any> {
+        return Observable.of(Stomp.over(new SockJS(url, null,
             { transports: [], })));
     }
 

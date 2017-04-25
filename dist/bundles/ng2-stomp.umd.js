@@ -7,8 +7,8 @@
 var Ng2StompService = (function () {
     function Ng2StompService() {
     }
-    Ng2StompService.prototype.getStompClient = function () {
-        return rxjs_Rx.Observable.of(Stomp.over(new SockJS('http://localhost:8080/auth/connectsocket', null, { transports: [], })));
+    Ng2StompService.prototype.getStompClient = function (url) {
+        return rxjs_Rx.Observable.of(Stomp.over(new SockJS(url, null, { transports: [], })));
     };
     Ng2StompService.prototype.getConnection = function (stompClient, configHeaders) {
         if (!stompClient || stompClient === null) {

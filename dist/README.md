@@ -2,7 +2,9 @@
 
 Steps to use:
 ```html
-1. npm install ng2-stomp --save
+1.  npm install sockjs-client --save
+    npm install stompjs --save
+    npm install ng2-stomp --save
 ```
 step 1 will list all the peer dependencies need(will be fixed in later version)
 ```html

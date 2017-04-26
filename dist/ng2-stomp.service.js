@@ -30,7 +30,7 @@ export var Ng2StompService = (function () {
     //Returns subscription Obj if needed to unSubscribe
     Ng2StompService.prototype.subscribeToTopic = function (topic, callback, header) {
         if (header && this.stompClient) {
-            if (this.stompClient.usedSubscriptions[header.id]) {
+            if (this.stompClient.subscriptions[header.id]) {
                 return Observable.of(this.stompClient.usedSubscriptions[header.id]);
             }
         }
@@ -45,6 +45,7 @@ export var Ng2StompService = (function () {
     };
     Ng2StompService.prototype.unSubscribe = function (subscriptionId) {
         this.stompClient.usedSubscriptions[subscriptionId].unsubscribe();
+        delete this.stompClient.usedSubscriptions[subscriptionId];
     };
     Ng2StompService.prototype.sendMessage = function (destination, body, headers) {
         return Observable.of(this.stompClient.send(destination, headers, body));

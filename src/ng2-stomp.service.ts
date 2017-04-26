@@ -39,7 +39,7 @@ export class Ng2StompService {
     //Returns subscription Obj if needed to unSubscribe
     subscribeToTopic(topic: string, callback?: Function, header?: { 'id': string }): Observable<any> {
         if (header && this.stompClient) {
-            if (this.stompClient.usedSubscriptions[header.id]) {
+            if (this.stompClient.subscriptions[header.id]) {
                 return Observable.of(this.stompClient.usedSubscriptions[header.id]);
             }
         }
@@ -55,6 +55,7 @@ export class Ng2StompService {
 
     unSubscribe(subscriptionId: string) {
         this.stompClient.usedSubscriptions[subscriptionId].unsubscribe();
+        delete this.stompClient.usedSubscriptions[subscriptionId];
     }
 
     sendMessage(destination: any, body: any, headers?: any): Observable<any> {
